@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package bala.graph.persistence.bwsub;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectStreamClass;
+
+/**
+ *
+ * @author bala
+ */
+public class EntryValuesOutputStream  extends ObjectOutputStream {
+      public EntryValuesOutputStream(OutputStream os) throws IOException{
+          super(os);
+      }
+    @Override
+    protected void writeClassDescriptor(ObjectStreamClass desc) throws IOException{
+       super.writeClassDescriptor(ObjectStreamClass.lookup(EntryValues.class));
+        
+    }
+   
+}

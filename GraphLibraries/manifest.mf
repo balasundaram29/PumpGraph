@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.bala.lib
+OpenIDE-Module-Localizing-Bundle: org/bala/lib/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
