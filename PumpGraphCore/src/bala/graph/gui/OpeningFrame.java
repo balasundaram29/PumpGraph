@@ -1169,9 +1169,9 @@ public final class OpeningFrame extends JFrame implements DocumentListener, Wind
                   // Setup the connection with the DB
                 Connection connect=null;
                 if (AppConstants.standard == IndianStandard.IS9079) {
-                    connect = DriverManager.getConnection("jdbc:mysql://localhost/db_for_bis_mb", "root", "");
+                    connect = DriverManager.getConnection("jdbc:mysql://localhost/db_for_bis_mb", "root", "bala");
                 } else if (AppConstants.standard == IndianStandard.IS14220) {
-                    connect = DriverManager.getConnection("jdbc:mysql://localhost/db_for_bis_sub", "root", "");
+                    connect = DriverManager.getConnection("jdbc:mysql://localhost/db_for_bis_sub", "root", "bala");
                 }
 
                 java.sql.PreparedStatement statement = connect.prepareStatement(""
