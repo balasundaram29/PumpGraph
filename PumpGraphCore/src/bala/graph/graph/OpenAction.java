@@ -9,6 +9,7 @@ import bala.graph.persistence.DirectoryPathPersistence;
 import bala.graph.settings.all.IndianStandard;
 import bala.graph.settings.current.AppConstants;
 import java.awt.BorderLayout;
+import java.awt.ComponentOrientation;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileInputStream;
@@ -44,8 +45,8 @@ public final class OpenAction implements ActionListener {
                 chooser = new JFileChooser(DirectoryPathPersistence.getFileDirectory("BWSPumpDir"));
             }
 
-            chooser.showOpenDialog(null);
-            if (chooser.getSelectedFile() == null) {
+           ;
+            if ( chooser.showOpenDialog(null)!=JFileChooser.APPROVE_OPTION||chooser.getSelectedFile() == null) {
                 return;
             }
 
