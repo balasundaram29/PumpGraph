@@ -1,4 +1,5 @@
 /build
 /dist
-PumpGraphCore/PumpGraphLog.*
-PumpGraphLog.*
+PumpGraphCore/PumpGraphLog.txt
+PumpGraphCore/PumpGraphLog.txt.*
+
