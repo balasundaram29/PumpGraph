@@ -2,4 +2,6 @@
 /dist
 PumpGraphCore/PumpGraphLog.txt
 PumpGraphCore/PumpGraphLog.txt.*
+PumpGraphLog.txt
+PumpGraphLog.txt.*
 
